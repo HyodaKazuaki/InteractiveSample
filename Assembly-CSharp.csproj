@@ -61,7 +61,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DepthColliderDemo\Scripts\DepthImageViewer.cs" />
+    <Compile Include="Assets\DepthColliderDemo\Scripts\EggMover.cs" />
+    <Compile Include="Assets\DepthColliderDemo\Scripts\EggSpawner.cs" />
+    <Compile Include="Assets\GesturesDemo\Scripts\GestureListener.cs" />
+    <Compile Include="Assets\GesturesDemo\Scripts\PresentationScript.cs" />
+    <Compile Include="Assets\KinectScripts\AvatarController.cs" />
+    <Compile Include="Assets\KinectScripts\AvatarControllerClassic.cs" />
+    <Compile Include="Assets\KinectScripts\Cubeman\CubemanController.cs" />
+    <Compile Include="Assets\KinectScripts\Filters\BoneOrientationsConstraint.cs" />
+    <Compile Include="Assets\KinectScripts\Filters\BoneOrientationsFilter.cs" />
+    <Compile Include="Assets\KinectScripts\Filters\ClippedLegsFilter.cs" />
+    <Compile Include="Assets\KinectScripts\Filters\JointPositionsFilter.cs" />
+    <Compile Include="Assets\KinectScripts\Filters\KinectHelper.cs" />
+    <Compile Include="Assets\KinectScripts\Filters\SelfIntersectionConstraint.cs" />
+    <Compile Include="Assets\KinectScripts\Filters\TimedLerp.cs" />
+    <Compile Include="Assets\KinectScripts\Filters\TrackingStateFilter.cs" />
+    <Compile Include="Assets\KinectScripts\KinectGestures.cs" />
+    <Compile Include="Assets\KinectScripts\KinectManager.cs" />
+    <Compile Include="Assets\KinectScripts\KinectWrapper.cs" />
+    <Compile Include="Assets\KinectScripts\Samples\FollowUserRotation.cs" />
+    <Compile Include="Assets\KinectScripts\Samples\GetJointPositionDemo.cs" />
+    <Compile Include="Assets\KinectScripts\Samples\LoadMainLevel.cs" />
+    <Compile Include="Assets\KinectScripts\Samples\MouseControl.cs" />
+    <Compile Include="Assets\KinectScripts\Samples\SetSceneAvatars.cs" />
+    <Compile Include="Assets\KinectScripts\Samples\SimpleGestureListener.cs" />
     <Compile Include="Assets\Mountain Terrain\Misc\CameraDefault.cs" />
+    <Compile Include="Assets\OverlayDemo\Scripts\KinectOverlayer.cs" />
     <Compile Include="Assets\Sardine\Scripts\IwasiMove.cs" />
     <Compile Include="Assets\Sardine\Scripts\IwasiOcean.cs" />
     <Compile Include="Assets\Sardine\Scripts\IwasiRigid.cs" />
@@ -70,19 +96,8 @@
     <Compile Include="Assets\Sardine\Scripts\SardineCameraScript.cs" />
     <Compile Include="Assets\Sardine\Scripts\SardineCharacter.cs" />
     <Compile Include="Assets\Sardine\Scripts\SardineUserController.cs" />
-    <Compile Include="Assets\Script\Kinect\KinectImgControllers\DisplayColor.cs" />
-    <Compile Include="Assets\Script\Kinect\KinectImgControllers\DisplayDepth.cs" />
-    <Compile Include="Assets\Script\Kinect\KinectModelControllers\KinectModelControllerV2.cs" />
-    <Compile Include="Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs" />
-    <Compile Include="Assets\Script\Kinect\KinectWrapper\DepthWrapper.cs" />
-    <Compile Include="Assets\Script\Kinect\KinectWrapper\DeviceOrEmulator.cs" />
-    <Compile Include="Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs" />
-    <Compile Include="Assets\Script\Kinect\KinectWrapper\KinectInterop.cs" />
-    <Compile Include="Assets\Script\Kinect\KinectWrapper\KinectRecorder.cs" />
-    <Compile Include="Assets\Script\Kinect\KinectWrapper\KinectSensor.cs" />
-    <Compile Include="Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs" />
     <Compile Include="Assets\Scripts\Boids.cs" />
-    <None Include="Assets\Asset\Shaders\Normal-Diffuse.shader" />
+    <Compile Include="Assets\Scripts\HandController.cs" />
     <None Include="Assets\Sardine\ReadMe.txt" />
     <None Include="Assets\Resources\originalShader.shader" />
     <Reference Include="UnityEditor.StandardEvents">
