@@ -51,10 +51,9 @@ public class Boids : MonoBehaviour {
             center += Child.transform.position;
         }
         center /= FishChildren.Length - 1;
-        center += new Vector3(HandPointObject.transform.position.x, FishPrefab.transform.position.y, HandPointObject.transform.position.z);
+        center += HandPointObject.transform.position; //new Vector3(HandPointObject.transform.position.x, FishPrefab.transform.position.y, HandPointObject.transform.position.z);
         center /= 2;
         center.y = -2f;
-        center = new Vector3(HandPointObject.transform.position.x, -2f, HandPointObject.transform.position.z);
         //Debug.Log(center);
 
         // 群れの中心へ移動
@@ -95,8 +94,10 @@ public class Boids : MonoBehaviour {
             vcity.y = 0f;
             rigidbody.velocity = vcity;
             Child.transform.position = new Vector3(Child.transform.position.x, yPosition[i], Child.transform.position.z);
-            // 常にcenterを向き続ける
-            Child.transform.LookAt(center);
+            // 常にポイントを向き続ける
+            Transform dummyTransform = HandPointObject.transform;
+            dummyTransform.position = new Vector3(dummyTransform.position.x, FishPrefab.transform.position.y, dummyTransform.position.z);
+            Child.transform.LookAt(dummyTransform);
             i++;
         }
     }
