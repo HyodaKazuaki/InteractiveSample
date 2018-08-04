@@ -8,7 +8,7 @@ using UnityEngine;
 public class Boids : MonoBehaviour {
     public int Fish = 50; // 魚の数
     public GameObject FishPrefab; // 魚のプレファブ
-    public GameObject TargetObject; // 追従する対象
+    public GameObject HandPointObject; // 追従する対象
     public GameObject[] FishChildren;
     public float Turbulence = 0.95f; // 中心移動の重み
     public float Distance = 4f; // 個体間距離
@@ -36,12 +36,14 @@ public class Boids : MonoBehaviour {
 	void Update () {
         Vector3 center = Vector3.zero;
 
-        /** ここにKinectで取得した手の位置をcenterに代入する **/
+        // 手の座標取得は別スクリプトで実装、オブジェクトの座標がそれにあたる
 
+        /* 
         Vector3 vecMouse = Input.mousePosition;
         vecMouse.z += 200f;
         Vector3 screenPos = Camera.main.ScreenToWorldPoint(vecMouse);
         TargetObject.transform.position = screenPos;
+        */
 
         // 群れの中心を求める
         foreach (var Child in FishChildren)
@@ -49,11 +51,11 @@ public class Boids : MonoBehaviour {
             center += Child.transform.position;
         }
         center /= FishChildren.Length - 1;
-        center += new Vector3(TargetObject.transform.position.x, FishPrefab.transform.position.y, TargetObject.transform.position.z);
+        center += new Vector3(HandPointObject.transform.position.x, FishPrefab.transform.position.y, HandPointObject.transform.position.z);
         center /= 2;
         center.y = -2f;
-        center = new Vector3(TargetObject.transform.position.x, -2f, TargetObject.transform.position.z);
-        Debug.Log(center);
+        center = new Vector3(HandPointObject.transform.position.x, -2f, HandPointObject.transform.position.z);
+        //Debug.Log(center);
 
         // 群れの中心へ移動
         Vector3 aveVelocity = Vector3.zero;
