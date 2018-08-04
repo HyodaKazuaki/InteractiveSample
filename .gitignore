@@ -1,1 +1,12 @@
-/Build/
+Build/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+/*.csproj
+/*.unityproj
+/*.sln
+/*.suo
+/*.user
+/*.userprefs
+/*.pidb
+/*.booproj
