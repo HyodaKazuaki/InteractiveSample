@@ -3,8 +3,8 @@
 Kinectで右手を動かすとそれに合わせてイワシがついてきます  
 
 ## 注意
-このソフトウェアを実行するにはKinect及びKinect for Windows SDK v2(Windows SDK)が必要です。
-* [Kinect for Windows SDK 2.0](https://developer.microsoft.com/en-us/windows/kinect)
+このソフトウェアを実行するにはKinect及びKinect for Windows SDK v1.8が必要です。
+* [Kinect for Windows SDK 1.8](https://www.microsoft.com/en-us/download/details.aspx?id=40278)
  
 アプリケーションの終了にはAlt + F4キーなどで終了する必要があります。
 
