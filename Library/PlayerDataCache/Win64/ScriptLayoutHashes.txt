@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/kazua/Documents/InteractiveSample/Build/InteractiveSample.exe
+C:/Users/kazua/Documents/GitHub/InteractiveSample/Build/InteractiveSample/InteractiveSample.exe
 SceneListBegin?
 Assets/Scenes/InteractiveSample.unity
 SceneListEnd?
